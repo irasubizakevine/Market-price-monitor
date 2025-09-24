@@ -1,0 +1,93 @@
+Part I- STACK
+Q1: How does this show the LIFO nature of stacks?
+In the MTN MoMo app, each step you complete while entering payment details like entering the amount, choosing a recipient, confirming payment, etc. is added to a sequence of steps like pushing data into a stack.
+When you press the "Back" button, the app removes the most recent last step you completed first this is just like a Pop operation in a stack, where the Last in the most recent step is the First Out the first one removed.
+Q2: Why is this action similar to popping from a stack?
+In UR Canvas, as you navigate through course modules like opening a module then a page then a quiz, each step is added to a navigation history like items pushed onto a stack.
+When you press the "Back" button, Canvas removes the most recent page you visited and takes you back to the previous one. This is like a Pop operation in a stack the top (last) item is removed first. It reflects the LIFO behavior because the last page you visited is the first one undone.
+
+B. Application
+3. Operation: Push Add to Stack New actions are always added to the top of the stack.
+For example, in BK Mobile Banking, each transaction is recorded by pushing it onto the transaction history stack.
+
+Q3:   mistakes stack enables the "Undo" function by keeping track of the most recent actions at the top. When a user wants to undo an action, the program simply pops removes the top item from the stack, which represents the last action performed. This LIFO allows actions to be reversed in the exact opposite order they were made, following the Last In, First Out
+
+ Q4: How can stacks help ensure that forms are correctly balanced?
+
+Stacks help verify that every opening input or section has a corresponding closing one As users fill out a form, each "opening" action is pushed onto the stack. When a "closing" action is performed like ending a section or completing a paired field the system pops the stack to confirm it matches the correct opening If the stack is empty at the end and all matches were correct, the form is balanced This prevents errors such as unclosed  sections or mismatched  fields, ensuring the form is filled out properly of stacks
+C. Logical
+
+5. Operation: Push and Pop sequence
+A student records tasks using a stack. The following operations are performed in order:
+•	Push CBE notes
+•	Push Math revision
+•	PushDebate
+6. Operation: Undo with Multiple Pops
+Scenario:
+
+During an ICT exam, a student enters several answers into a computer system. These answers are stored using a stack data structure   meaning Last In First Out LIFO This means the last action or answer added is the first one to be removed when the student undoes an action.
+
+Later, the student decides to undo the 3 most recent actions, which means they are using the Popoperation  three times to remove the last three entries from the stack
+Q 7. OPERATION POPTO BACKTRACK
+
+t works on a Last In First Out (LIFO) principle the most recent item added is the first one to be removed.
+•	When the passenger completes each step of the form, the system pushes that step onto the stack.
+•	If the passenger decides to go back one step, the system pops the most recent step from the stack, taking them back to the previous step.
+•	This continues step-by-step, allowing the passenger to retrace their steps in reverse order exactly as they went forward.
+Using a stack makes it easy to remember and undo steps in the right order without losing track of t
+Q8: Explain and demonstrate how a stack algorithm can be used to reverse the proverb Umwana ni umutware by pushing and popping the words.
+
+To reverse the phrase Umwana ni umutware push each word onto a stack one by one, then pop them off to reverse the order.
+9. Operation: DFS using a stack
+A student is searching shelves in Kigali Public Library using a deep search approach.
+Q9: Why is using a stack more suitable for this depth-first search (DFS) compared to using a queue
+A stack is more suitable for Depth-First Search (DFS) because it follows the Last-In, First-Out (LIFO) principle, which allows the search to explore as far down one branch (or shelf) as possible before backtracking. This mimics the natural "deep search" behavior, going deep into one path before checking others.
+In contrast, a queue uses First-In, First-Out (FIFO) order, which is better for Breadth-First Search (BFS) where you explore all neighbors level by level rather than going deep.
+So, a stack helps the student go deep into one shelf at a time, making it ideal for DFS.
+Q10: 
+
+Queues match drivers and students fairly by following First-In, First-Out (FIFO) order, so the earliest waiting driver is paired with the earliest waiting student, ensuring no one is skipped.
+
+
+
+SECTION QUEVE
+1.	How does serving customers in order at a Kigali restaurant show FIFO behavior?
+Customers are served in the order they arrive. The first customer to join the line is served first, and new customers join at the back. This is First-In, First-Out (FIFO) because the earliest arrivals leave first
+2.	.
+2. Why is the YouTube playlist’s next video playing like a dequeuer operation?
+The next video plays automatically and is removed from the playlist after playing. This matches the dequeuer operation where the item at the front is processed and removed first.
+________________________________________
+B. Application
+3. How is people lining up at RRA offices a real-life queue?
+People join the line one after another (enqueuer) and the person at the front is served first (dequeuer) This orderly line is a real-world example of a queue.
+
+4. How do queues improve customer service in MTN/Airtel centers?
+Queues ensure requests are handled in the exact order they arrive, making service fair and organized. 
+ 5. Who is at the front now in Equity Bank after these operations?
+Operations:
+•	Enqueuer(“Alice”)
+•	Enqueuer(“Eric”)
+•	Enqueuer(“Chantal”)
+•	Dequeuer ()
+•	Enqueuer(“Jean”)
+Answer:
+The first person, Alice, is dequeuer (removed), so the queue now has: Eric, Chantal, Jean.
+Eric is at the front now.
+
+6. How does a queue ensure fairness in RSSB pension applications?
+A queue processes pension applications in the order they arrive, so the earliest applicant is served first. This FIFO approach prevents skipping or favoritism, making the process fair to everyone.
+________________________________________
+D. Advanced Thinking
+7. Explain how different queue types map to real Rwandan life:
+•	Linear Queue (wedding buffet line):
+People join the buffet line one after another and get served in that order. Once served, they leave, similar to a linear queue where items enter at the rear and leave from the front.
+•	8. How can queues model food orders at a Kigali restaurant?
+•	
+Customers place orders one after another (enqueuer). The kitchen prepares them in the same order. When an order is ready, it's called out and served (dequeuer). This follows FIFO, ensuring the first order placed is the first served.
+•	9. Why is CHUK hospital an example of a priority queue, not a normal queue?
+•	
+In emergencies, patients with serious conditions are treated before others, regardless of arrival time. This is a priority queue, where items (patients) are served based on urgency (priority), not just who came first.
+•	10. How do queues fairly match drivers and students in a moto/e-bike taxi app?
+•	
+The app uses two queues: one for students, one for drivers. The first available driver is matched with the first waiting student. This FIFO matching system ensures both parties are served in the order they arrived, making it fair for all.
+GOOD  LUCKY
